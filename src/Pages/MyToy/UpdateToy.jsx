@@ -20,7 +20,7 @@ const UpdateToy = () => {
     const description = form.description.value;
     const toysGames = { price, availableQuantity, description };
     console.log(price, availableQuantity, description);
-    fetch(`https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toys/${id}`, {
+    fetch(`https://b7a11-toy-marketplace-server-side-salmanfursi.vercel.app/toys/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

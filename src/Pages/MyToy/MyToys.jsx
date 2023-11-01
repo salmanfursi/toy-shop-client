@@ -14,7 +14,7 @@ const MyToys = () => {
   // console.log(toys)
   useEffect(() => {
   
-    const url = `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toy?email=${user?.email}&${isDescending ? "sort=desc" : ""}`;
+    const url = `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app/toy?email=${user?.email}&${isDescending ? "sort=desc" : ""}`;
 
 
     fetch(url)

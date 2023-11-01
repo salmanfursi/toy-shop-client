@@ -15,7 +15,7 @@ const ShopByCategory = () => {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toys/category/${selectedCategory}`
+      `https://b7a11-toy-marketplace-server-side-salmanfursi.vercel.app/toys/category/${selectedCategory}`
     )
       .then((response) => response.json())
       .then((data) => setToys(data))
@@ -29,7 +29,7 @@ const ShopByCategory = () => {
     
       setLoading(true);
       fetch(
-        `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toys/categoryall/${selectedCategory}`
+        `https://b7a11-toy-marketplace-server-side-salmanfursi.vercel.app/toys/categoryall/${selectedCategory}`
       )
         .then((response) => response.json())
         .then((data) => setToys(data))

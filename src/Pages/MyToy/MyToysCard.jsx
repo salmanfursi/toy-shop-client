@@ -28,7 +28,7 @@ const MyToysCard = ({ toy, setToys }) => {
       if (result.isConfirmed) {
         Swal.fire("Deleted!", "Your file has been deleted.", "success");
 
-        fetch(`https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toys/${id}`, {
+        fetch(`https://b7a11-toy-marketplace-server-side-salmanfursi.vercel.app/toys/${id}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

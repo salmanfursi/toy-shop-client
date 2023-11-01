@@ -33,7 +33,7 @@ const router = createBrowserRouter([
             path: "/alltoy",
             element: <AllToys></AllToys>,
             loader: () =>
-               fetch("https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toys"),
+               fetch("https://b7a11-toy-marketplace-server-side-salmanfursi.vercel.app/toys"),
          },
          {
             path: "/toyCardDetails/:id",
@@ -44,7 +44,7 @@ const router = createBrowserRouter([
             ),
             loader: ({ params }) =>
                fetch(
-                  `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//${params.id}`
+                  `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app/${params.id}`
                ),
          },
          {
@@ -68,7 +68,7 @@ const router = createBrowserRouter([
             element: <UpdateToy></UpdateToy>,
             loader: ({ params }) =>
               fetch(
-                `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toys/${params.id}`
+                `https://b7a11-toy-marketplace-server-side-salmanfursi.vercel.app/toys/${params.id}`
               ),
           },
          {

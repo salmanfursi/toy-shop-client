@@ -19,7 +19,7 @@ const ToyCardDetails = () => {
   } = view;
   // console.log(view)
   useEffect(() => {
-    fetch(`https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toy/${id}`)
+    fetch(`https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app/toy/${id}`)
       .then((res) => res.json())
       .then((data) => {
         // console.log(data)
