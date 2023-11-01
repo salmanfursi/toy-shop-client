@@ -20,7 +20,7 @@ const CategoryDetails = () => {
   } = view;
   // console.log(view)
   useEffect(() => {
-    fetch(`http://localhost:5000/toy/${id}`)
+    fetch(`https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toy/${id}`)
       .then((res) => res.json())
       .then((data) => {
         setView(data);

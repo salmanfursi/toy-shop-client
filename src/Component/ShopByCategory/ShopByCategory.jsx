@@ -15,7 +15,7 @@ const ShopByCategory = () => {
   useEffect(() => {
     setLoading(true);
     fetch(
-      `http://localhost:5000/toys/category/${selectedCategory}`
+      `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toys/category/${selectedCategory}`
     )
       .then((response) => response.json())
       .then((data) => setToys(data))
@@ -29,7 +29,7 @@ const ShopByCategory = () => {
     
       setLoading(true);
       fetch(
-        `http://localhost:5000/toys/categoryall/${selectedCategory}`
+        `https://toy-shop-server-dgsz5cipj-salmanfursi.vercel.app//toys/categoryall/${selectedCategory}`
       )
         .then((response) => response.json())
         .then((data) => setToys(data))
